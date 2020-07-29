@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <h1 id="title">Estilo de vida en la cuarentena</h1>
+        <p id="description">La finalidad de esta encuesta es conocer acerca de el estilo de vida de las personas durante la cuarentena</p>
+    </header>
+
+        <form id="survey-form">            
+                    <label for="name" id="name-label">Nombre </label>
+                    <input type="text" id="name" name="name" class="text" placeholder="Iván Santana Jacinto" required>
+                    
+                    <label for="email" id="email-label">Email </label>
+                    <input type="email" id="email" name="email" class="text" placeholder="ivan@ivan.com" required>
+            
+                    <label for="number" id="number-label">Edad (opcional)</label>
+                    <input type="number" id="number" min="18" max="99" name="age" class="text" placeholder="22">
+                
+            <div class="ejercicio">
+            <p>¿Cada cuanto has hecho ejercicio?</p>
+            <select name="opciones" id="dropdown">
+                <option value="nunca">Ningún día</option>
+                <option value="aveces">De 2 a 3 veces a la semana</option>
+                <option value="diario">Diario</option>
+            </select>
+            </div>
+
+            <fieldset>
+                <legend>¿Has desarrollado algúna nueva habilidad?</legend>
+                
+               <label for="si">
+                   <input type="radio" id="si" name="radio-button" value="si" checked>
+                   Si
+               </label>
+    
+                <label for="no">
+                    <input type="radio" id="no" name="radio-button" value="no">
+                    No
+                </label>
+    
+                <label for="en-ello">
+                    <input type="radio" id="en-ello" name="radio-button" value="en-ello">
+                    Estoy en ello
+                </label>
+            </fieldset>
+
+                <div class="aprender">
+                    <p>¿Sobre qué te gustaría aprender?</p>
+                    <label for="musica"><input type="checkbox" id="musica" value="musica" checked>Música</label>
+                    <label for="marketing"><input type="checkbox" id="marketing" value="marketing">Marketing</label>
+                    <label for="programacion"><input type="checkbox" id="programacion" value="programacion">Programación</label>
+                    <label for="desarrollo-personal"><input type="checkbox" id="desarrollo-personal" value="desarrollo-personal">Desarrollo Personal</label>
+                    <label for="negocios"><input type="checkbox" id="negocios" value="negocios">Negocios</label>
+                    <label for="diseno"><input type="checkbox" id="diseno" value="diseno">Diseño</label>
+                    <label for="comunicacion"><input type="checkbox" id="comunicacion" value="comunicacion">Comunicación</label>
+                </div>
+            
+            <p class="comentario">¿Tienes algún comentario?</p>
+            <textarea name="coments" id="coments" cols="5" rows="5"></textarea>
+            
+            <button type="submit" id="submit"> Enviar</button>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

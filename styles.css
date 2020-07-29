@@ -1,0 +1,191 @@
+:root{
+    --left:50px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+header{
+    margin: 0 50px 0 50px;
+    text-align: center; 
+}
+
+#title{
+    font-weight: bold;
+}
+
+#survey-form{
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.308);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 300px 40px 300px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.507);
+}
+:root{
+    --left:50px;
+}
+
+.text{
+    font-size: 17px;
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.text:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+}
+
+#name-label{
+    margin-left: var(--left);
+    width: fit-content;
+}
+
+#email-label{
+    margin-left: var(--left);
+    width: fit-content;
+}
+
+#number-label{
+    margin-left: var(--left);
+    width: fit-content;
+}
+
+.ejercicio{
+    margin: 0 0 0 var(--left);
+}
+
+#dropdown{
+    font-size: 17px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#dropdown:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+}
+
+fieldset{
+    margin: 0 50px 0 var(--left);
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+fieldset label{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.aprender{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 var(--left);
+    width: fit-content;
+}
+
+.comentario{
+    margin-left: var(--left);
+}
+
+textarea{
+    font-size: 17px;
+    text-align: center;
+    margin: 0 50px 16px var(--left);
+    padding: 20px;
+    resize: none;
+    border: none;
+    border-radius: 6px;
+}
+
+textarea:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+}
+
+#submit{
+    margin: 0 50px 0 var(--left);
+    padding: 16px;
+    font-size: large;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#submit:hover{
+    background: linear-gradient(to right, #24c7dcc2, #514a9dc9);   
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.562);
+    color: #fff;
+}
+
+@media (max-width: 500px){
+
+    header{
+        margin: 0 10px 0 10px;
+    }
+
+    #survey-form{
+        margin: 0 10px 0 10px;
+    }
+
+    .text{
+        margin: 10px 0 10px 0;
+    }
+
+    #name-label{
+        margin-left: 0;
+    }
+    
+    #email-label{
+        margin-left: 0;
+    }
+    
+    #number-label{
+        margin-left: 0;
+    }
+
+    .ejercicio{
+        margin: 0;
+    }
+
+    fieldset{
+        margin: 0 0 0 0;
+    }
+
+    .aprender{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        width: fit-content;
+    }
+    
+    .comentario{
+        margin-left: 0;
+    }
+
+    textarea{
+        margin: 0 0 16px 0;
+    }
+
+    #submit{
+        margin: 0 0 0 0;
+        padding: 18px;
+    }
+
+}
